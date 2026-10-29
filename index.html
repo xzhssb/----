@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="description" content="一份可以慢慢翻的成都六页旅行手册：交通、住宿、景点、美食、路线与预算。">
+  <title>成都慢游手册 </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#page-1" aria-label="成都慢游手册首页">
+      <span class="brand-mark">蜀</span>
+      <span>CHENGDU <small>慢游手册</small></span>
+    </a>
+    <nav class="page-nav" aria-label="攻略页面">
+      <button class="nav-link is-active" data-page="1">出发前</button>
+      <button class="nav-link" data-page="2">住哪里</button>
+      <button class="nav-link" data-page="3">去逛逛</button>
+      <button class="nav-link" data-page="4">吃成都</button>
+      <button class="nav-link" data-page="5">怎么玩</button>
+      <button class="nav-link" data-page="6">预算避坑</button>
+    </nav>
+    <button class="menu-toggle" aria-label="打开页面导航" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="page is-current" id="page-1" data-title="出发前">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> A SOFT LANDING IN CHENGDU · 2026</p>
+          <h1>把成都，<br><em>过成慢一点的日子。</em></h1>
+          <p class="hero-lede">不赶早八式打卡，不为“必吃榜”排两小时队。六页手册，陪你从落地到回家，把这座城走得舒服一点。</p>
+          <div class="hero-meta"><span>📍 成都全域</span><span>🗓 春夏秋冬都能来</span><span>☁️ 轻松走，不硬核赶路</span></div>
+          <button class="button button-dark" data-go="2">从住哪里开始 <span>↗</span></button>
+        </div>
+        <div class="hero-image" role="img" aria-label="以成都山水色调绘制的柔和风景插画"></div>
+        <div class="hero-stamp">一城<br>一茶<br>一慢</div>
+        <div class="hero-caption">CHENGDU, AT YOUR OWN PACE <span>30° 34′ N · 104° 04′ E</span></div>
+      </div>
+
+      <div class="section-intro">
+        <p class="eyebrow">01 / BEFORE YOU GO</p>
+        <h2>先把路走顺，<br class="mobile-break">旅行自然松弛。</h2>
+        <p>成都的舒服，不是“景点全刷完”，而是给排队、下雨和临时想坐下喝茶留出空白。</p>
+      </div>
+      <div class="two-col">
+        <article class="paper-card season-card">
+          <div class="card-heading"><span class="icon-round">☀</span><h3>什么时候来，穿什么？</h3></div>
+          <div class="season-grid">
+            <div><b>3–5月</b><p>春意舒服，早晚薄外套；花粉敏感备口罩。</p></div>
+            <div><b>6–8月</b><p>闷热、阵雨多，短袖+轻薄雨具；防晒和补水要带。</p></div>
+            <div><b>9–11月</b><p>秋天最宜慢逛，昼夜温差明显，带一件针织/薄风衣。</p></div>
+            <div><b>12–2月</b><p>湿冷感比温度数字明显，保暖内层、围巾和防滑鞋更实用。</p></div>
+          </div>
+          <p class="fineprint">成都天气变化快，出发前 3–5 天再看预报；山上比市区更冷、更易起雾。</p>
+        </article>
+        <article class="paper-card checklist-card">
+          <div class="card-heading"><span class="icon-round">✓</span><h3>随身清单，不用塞满箱</h3></div>
+          <ul class="check-list">
+            <li>身份证；学生证/优惠证件原件</li>
+            <li>手机、充电线、充电宝（留意额定能量标识）</li>
+            <li>舒适防滑鞋、轻便雨伞或雨衣</li>
+            <li>常用药、肠胃药、个人过敏药</li>
+            <li>防晒、纸巾、少量现金；带孩子加备用衣物</li>
+          </ul>
+          <p class="fineprint">景区购票常需实名预约，证件姓名要和订单一致。大熊猫基地及博物馆政策以官方购票页当天说明为准。</p>
+        </article>
+      </div>
+      <div class="transport-strip">
+        <div><p class="eyebrow">ARRIVAL · 先选对落地点</p><h3>两个机场、两个火车站，别下错。</h3></div>
+        <div class="transport-item"><b>天府机场 TFU</b><p>离市区较远。优先看机场线/高铁实际班次；深夜、多人或行李多再比价打车。留足进城时间。</p></div>
+        <div class="transport-item"><b>双流机场 CTU</b><p>离主城区更近，地铁和网约车都方便；去市中心通常更省时，仍以实时导航为准。</p></div>
+        <div class="transport-item"><b>成都东站</b><p>高铁枢纽，地铁 2/7 号线可换乘；去春熙路一带直接按实时路线选线。</p></div>
+        <div class="transport-item"><b>成都站（火车北站）</b><p>靠北，地铁 1/7 号线换乘；不要和成都东站混淆，网约车选“成都站”准确上车点。</p></div>
+      </div>
+      <div class="two-col compact">
+        <article class="note-card"><span class="note-icon">🚇</span><div><h3>地铁与天府通</h3><p>天府通实体卡、乘车码或支持的手机钱包均可使用；乘车码开通城市要选“成都”。线路、末班车、机场接驳以成都地铁官方公告与地图实时信息为准。周末热门站尽量错峰进站。</p></div></article>
+        <article class="note-card"><span class="note-icon">🚕</span><div><h3>打车小提醒</h3><p>用正规平台，站机场按指定上客区走；不跟陌生人走、不接受“拼车低价带你走”。晚高峰、雨天和散场时段叫车会慢，短距离地铁更稳。</p></div></article>
+      </div>
+      <div class="page-bottom"><span>TRAVEL NOTES · 2026</span><button data-go="2">下一页：挑一个好住处 →</button></div>
+    </section>
+
+    <section class="page" id="page-2" data-title="住哪里">
+      <div class="page-heading">
+        <p class="eyebrow">02 / STAY WELL</p><h1>住对一片，<br><em>少走很多路。</em></h1>
+        <p>下面是选区思路，不是某家酒店的实时报价。节假日房价波动大，建议同一日期多平台比总价、看近期评价，再确认取消政策。</p>
+      </div>
+      <div class="stay-grid">
+        <article class="stay-card stay-highlight"><span class="stay-number">01</span><div class="stay-tag">第一次来 · 交通省心</div><h2>春熙路 / 太古里</h2><p class="stay-for">适合：首访、学生、情侣、想逛吃的人</p><p>地铁换乘便利，餐饮和商场密集，去市中心景点好安排。缺点是热闹区人多、街边房可能吵，热门日期价格偏高。</p><div class="stay-spec"><span>参考价 <b>¥300–900+</b> /间夜</span><span>噪音 <b>中–高</b></span><span>交通 <b>很方便</b></span></div><p class="stay-pick">首选：离地铁步行 5–10 分钟、但不临主干道的正规酒店。</p></article>
+        <article class="stay-card"><span class="stay-number">02</span><h2>宽窄巷子 / 通惠门</h2><p class="stay-for">适合：偏爱老城氛围、去人民公园和草堂</p><p>周边院落和小旅店有味道，步行逛老城舒服。景区边夜间人声多，部分老建筑隔音一般，订房前认真看窗户和差评。</p><div class="stay-spec"><span>参考价 <b>¥260–800+</b></span><span>噪音 <b>中</b></span><span>交通 <b>方便</b></span></div><p class="stay-pick">首选：通惠门或地铁沿线，别只为“住进景区”买单。</p></article>
+        <article class="stay-card"><span class="stay-number">03</span><h2>武侯祠 / 高升桥</h2><p class="stay-for">适合：三国文化、锦里夜游、亲子慢行</p><p>去武侯祠、锦里方便，生活区更接地气。市中心跨区通勤略长；部分地段离地铁站有距离，要先核地图步行路线。</p><div class="stay-spec"><span>参考价 <b>¥220–650+</b></span><span>噪音 <b>低–中</b></span><span>交通 <b>较方便</b></span></div><p class="stay-pick">首选：靠近地铁 3/5/10 号线站点、评价稳定的住宿。</p></article>
+        <article class="stay-card"><span class="stay-number">04</span><h2>金牛 / 火车北站</h2><p class="stay-for">适合：预算优先、北边办事或早晚到站</p><p>选择多，性价比常更友好。区域较大，不要只看“金牛区”三个字；去春熙路、武侯祠需要算通勤时间。</p><div class="stay-spec"><span>参考价 <b>¥160–500+</b></span><span>噪音 <b>看街区</b></span><span>交通 <b>中等</b></span></div><p class="stay-pick">首选：靠地铁、非车站周边揽客型小旅馆，优先看近期评价。</p></article>
+        <article class="stay-card"><span class="stay-number">05</span><h2>建设路 / 东郊记忆</h2><p class="stay-for">适合：夜市爱好者、年轻人、二刷成都</p><p>逛吃氛围浓，去东郊记忆方便；夜间热闹，临夜市的房间可能吵，去西边景点需留更多时间。</p><div class="stay-spec"><span>参考价 <b>¥200–650+</b></span><span>噪音 <b>中–高</b></span><span>交通 <b>中等</b></span></div><p class="stay-pick">首选：住在夜市外围安静一两条街，睡好比“下楼就是摊”重要。</p></article>
+      </div>
+      <aside class="callout"><span>住一晚的判断顺序</span><p>先看地铁步行距离 → 再看房间近期差评（隔音、卫生、热水）→ 最后比较总价和取消条件。带老人孩子选电梯、早餐和安静街区；红眼航班别为了住市中心多折腾一次。</p></aside>
+      <div class="page-bottom"><span>STAY LOCAL · SLEEP WELL</span><button data-go="3">下一页：去逛逛 →</button></div>
+    </section>
+
+    <section class="page" id="page-3" data-title="去逛逛">
+      <div class="page-heading">
+        <p class="eyebrow">03 / CITY WALKS</p><h1>成都值得逛的，<br><em>不止一张熊猫合影。</em></h1>
+        <p>免费不等于没体验，热门也不等于非去不可。以下票价为常见参考，开放时段、预约和优惠以景区官方当日公告为准。</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="景点筛选">
+        <button class="filter-chip is-selected" data-filter="all">全部 9</button>
+        <button class="filter-chip" data-filter="paid">收费景点</button>
+        <button class="filter-chip" data-filter="free">免费/街区</button>
+        <button class="filter-chip" data-filter="outskirts">成都周边</button>
+      </div>
+      <div class="attraction-list">
+        <article class="attraction-card" data-kind="paid">
+          <div class="attraction-top"><span class="attraction-no">01</span><span class="pill">亲子首选</span><span class="pill pill-green">早上去</span></div><h2>成都大熊猫繁育研究基地</h2>
+          <div class="attraction-facts"><span>📍 成华区熊猫大道1375号</span><span>🚇 3号线动物园站转接驳/公交，或按官方交通指引</span><span>🎟 常见参考 ¥55；实名预约政策查官方</span><span>🕘 常见开放约 7:30–18:00，分季节核验</span><span>⏱ 3–5小时</span></div>
+          <p><b>怎么玩：</b>尽量早到，凉爽时熊猫活动相对多；先看当日地图和熊猫馆开放情况，按园区指引选择步行或观光车，不要为了“打卡所有馆”绕完整园。观光车班次、票价及停靠点以现场公告为准。</p>
+          <p><b>拍照点：</b>园区竹林步道、熊猫主题标识与馆舍外观；拍摄勿敲玻璃、不开闪光灯。 <b>避坑：</b>别买场外“免排队/内部票”，不投喂、不触摸；预约成功也要留出入园安检时间。</p>
+          <p class="local-tip">本地慢玩法：选一个馆认真看，再在树荫下休息；不追着熊猫跑全园。周末和假日把交通拥堵也算进时间。</p>
+        </article>
+        <article class="attraction-card" data-kind="free">
+          <div class="attraction-top"><span class="attraction-no">02</span><span class="pill">老城散步</span></div><h2>宽窄巷子 + 井巷子</h2>
+          <div class="attraction-facts"><span>📍 青羊区长顺街附近</span><span>🚇 4号线宽窄巷子站，出站步行</span><span>🎟 街区免费；店内消费自理</span><span>🕘 全天开放，商铺营业时间各异</span><span>⏱ 1.5–2.5小时</span></div>
+          <p><b>重点：</b>宽巷子看街巷肌理，窄巷子看院落与小店，井巷子相对安静，适合慢看墙面、展陈和小型庭院。最佳光线是早晨或傍晚。</p>
+          <p><b>拍照：</b>避开正中主巷，转入支巷取景；尊重院落住户，别擅入私人空间。 <b>避坑：</b>景区里同类小吃偏游客价，不必把正餐安排在最拥挤的主街；先看价签再点。</p>
+          <p class="local-tip">本地玩法：逛完接人民公园或泡桐树街，别在主巷反复绕圈找“空无一人”的机位。</p>
+        </article>
+        <article class="attraction-card" data-kind="paid">
+          <div class="attraction-top"><span class="attraction-no">03</span><span class="pill">三国文化</span><span class="pill pill-green">白天进祠，晚间逛街</span></div><h2>武侯祠 + 锦里古街</h2>
+          <div class="attraction-facts"><span>📍 武侯区武侯祠大街231号</span><span>🚇 10号线武侯祠（锦里）站 A2 口步行约3分钟；亦可由高升桥站步行</span><span>🎟 武侯祠全价 ¥50、半价 ¥25；锦里街区免费</span><span>🕘 武侯祠 9:00–18:00，17:00停止入馆（官方公布）</span><span>⏱ 祠 1.5–2小时；锦里 1–1.5小时</span></div>
+          <p><b>重点：</b>武侯祠看君臣合祀的历史脉络、刘备殿与诸葛亮殿，别只在红墙前拍照。建议先入祠再去锦里，夜色适合散步，但节假日主街拥挤。</p>
+          <p><b>拍照：</b>红墙夹道、古柏与竹影；请避开人流拥堵处，不堵门拍照。 <b>避坑：</b>武侯祠官方提示未委托第三方销售门票/讲解，走官网或现场正规渠道。锦里小吃先看价签，逛街不等于必须消费。</p>
+          <p class="local-tip">本地玩法：错开晚饭正点，先在周边吃好再来散步；武侯祠票务、开放时间以官网为准，预约入口见页面底部链接。</p>
+        </article>
+        <article class="attraction-card" data-kind="free">
+          <div class="attraction-top"><span class="attraction-no">04</span><span class="pill">城市潮流</span></div><h2>春熙路 + 太古里 + IFS + 大慈寺</h2>
+          <div class="attraction-facts"><span>📍 IFS：锦江区红星路三段1号；大慈寺：大慈寺路8号</span><span>🚇 2/3号线春熙路站；3号线市二医院站可步行到大慈寺</span><span>🎟 街区与大慈寺免费；商场消费自理</span><span>🕘 商场营业时间看当日公告；寺院开放以现场为准</span><span>⏱ 2–3小时</span></div>
+          <p><b>重点：</b>IFS熊猫装置、裸眼3D屏、太古里街区和大慈寺形成一条步行动线。大慈寺就在繁华商圈旁，进寺请保持安静并遵守现场礼仪。</p>
+          <p><b>拍照：</b>IFS广场看熊猫，太古里选街角借建筑线条；3D屏建议看现场排期，别把“必有演出”当保证。 <b>避坑：</b>不跟陌生人去高价拍照或购物；商圈饭店先看菜单价格。</p>
+          <p class="local-tip">本地玩法：傍晚去拍街景，再进大慈寺安静坐一会儿；周末把大慈寺安排在上午或工作日下午。</p>
+        </article>
+        <article class="attraction-card" data-kind="free">
+          <div class="attraction-top"><span class="attraction-no">05</span><span class="pill">坐下来喝茶</span></div><h2>人民公园 + 鹤鸣茶社</h2>
+          <div class="attraction-facts"><span>📍 青羊区祠堂街少城路</span><span>🚇 2号线人民公园站</span><span>🎟 公园免费；茶社按菜单消费</span><span>🕘 公园开放时段以现场为准，茶社营业时间看门店公告</span><span>⏱ 1–2小时</span></div>
+          <p><b>重点：</b>盖碗茶是坐着聊天，不是喝完就走。茶价、续水和采耳服务都先看清菜单。采耳属个人服务消费，非必体验。</p>
+          <p><b>拍照：</b>茶桌、竹椅、湖边树影；不要未经同意拍摄陌生人。 <b>避坑：</b>路边主动招揽的采耳不轻易体验；进店先确认价格、服务内容、工具卫生和时长。</p>
+          <p class="local-tip">本地玩法：工作日早些去更容易找到安静位置；带老人可把这站作为中途休息，不必硬凑多个景点。</p>
+        </article>
+        <article class="attraction-card" data-kind="free">
+          <div class="attraction-top"><span class="attraction-no">06</span><span class="pill">清静半日</span></div><h2>文殊院 + 文殊坊</h2>
+          <div class="attraction-facts"><span>📍 青羊区文殊院街66号</span><span>🚇 1号线文殊院站，步行可达</span><span>🎟 文殊院免费；素斋按菜单消费</span><span>🕘 以院方当天开放公告为准</span><span>⏱ 1.5–2.5小时</span></div>
+          <p><b>重点：</b>寺院礼佛与街区逛吃分开安排；保持安静，遵守禁拍区域提示，不影响礼佛者。</p>
+          <p><b>拍照：</b>红墙、古木、院落转角；古风拍照不要穿行礼佛队伍。 <b>避坑：</b>素斋并非所有档口都全天营业，提前看现场营业牌；香火及文创消费自愿。</p>
+          <p class="local-tip">本地玩法：先在院里慢走，再去周边找素食/小吃；别把“免费祈福”变成被动购买高价物品。</p>
+        </article>
+        <article class="attraction-card" data-kind="free">
+          <div class="attraction-top"><span class="attraction-no">07</span><span class="pill">工业风漫步</span></div><h2>东郊记忆</h2>
+          <div class="attraction-facts"><span>📍 成华区建设南支路4号</span><span>🚇 8号线东郊记忆站；按出口导航</span><span>🎟 园区免费，展演/店铺单独收费</span><span>🕘 园区全天可逛，商户活动有时间表</span><span>⏱ 1.5–3小时</span></div>
+          <p><b>重点：</b>老厂房、红砖、管道和音乐展演空间。展览或演出是否开放看当天公告。</p>
+          <p><b>拍照：</b>厂房墙面、轨道元素、园区标识和长廊；下午斜光层次好。 <b>避坑：</b>园区大，先查想看的展/店在哪；演出门票不要在非官方渠道买。</p>
+          <p class="local-tip">本地玩法：白天逛园区，傍晚去建设路吃饭；周末遇活动会更热闹，也更难拍空景。</p>
+        </article>
+        <article class="attraction-card" data-kind="free">
+          <div class="attraction-top"><span class="attraction-no">08</span><span class="pill">三种夜生活</span></div><h2>望平街 · 建设路 · 玉林路</h2>
+          <div class="attraction-facts"><span>📍 望平街（锦江滨河一带）；建设路夜市（成华区建设路）；玉林路（武侯区玉林片区）</span><span>🚇 各街区分散，按具体门店选最近地铁站+步行；夜间回程预留时间</span><span>🎟 街区免费，餐饮自理</span><span>🕘 傍晚至夜间更有氛围，摊位/店铺营业时间各异</span><span>⏱ 各选一片 1.5–2小时</span></div>
+          <p><b>怎么选：</b>望平街看河岸夜景和咖啡小店；建设路适合夜市小吃；玉林适合散步、喝酒和听歌。不要一天晚上横跨三片区。</p>
+          <p><b>避坑：</b>路边小吃先确认单价和份量，排队长不等于最好吃；夜间打车去正规上车点，注意保管手机。</p>
+          <p class="local-tip">本地玩法：望平街沿河走一小段就好；玉林更适合找一家喜欢的店坐着，不是每家“网红店”都值得排队。</p>
+        </article>
+        <article class="attraction-card attraction-wide" data-kind="outskirts">
+          <div class="attraction-top"><span class="attraction-no">09</span><span class="pill">周边一日游</span><span class="pill pill-green">少安排一站更舒服</span></div><h2>都江堰 + 青城山：选东线还是西线？</h2>
+          <div class="attraction-facts"><span>📍 都江堰市</span><span>🚄 成都站/犀浦等站至离堆公园或青城山站，车次按当日铁路查询</span><span>🎟 都江堰常见参考 ¥80；青城前山常见参考 ¥80；优惠及季节政策以官方为准</span><span>🕘 景区通常白天开放，务必核验官方预约/闭园时间</span><span>⏱ 建议分两天；硬要一日需早出发且体力充足</span></div>
+          <p><b>舒适动线：</b>早班高铁到离堆公园 → 都江堰景区（秦堰楼/二王庙/安澜索桥按体力择走）→ 午餐 → 下午灌县古城、南桥 → 回成都。青城山另安排一天：高铁到青城山站，接驳进前山，按体力选择索道/步行，预留返程缓冲。</p>
+          <p><b>如果只能一天：</b>只深逛都江堰，或只去青城前山；两者都走容易赶车、排队、腿累。景区间接驳及高铁请提前核班次，不买路边“低价包团”。</p>
+          <p class="local-tip">周末/节假日提前订官方可退车票和门票；山里带防滑鞋、薄外套和饮水。青城后山距离、强度与前山不同，别误买错线路。</p>
+        </article>
+      </div>
+      <div class="tag-row"><span>最值得慢慢逛：文殊院、人民公园、大慈寺</span><span>容易踩消费坑：景区主街高价小吃、节假日网红排队、路边拉客体验</span><span>雨天备选：博物馆/茶馆/东郊展览（先查开放）</span></div>
+      <div class="page-bottom"><span>WALK SLOW · LOOK CLOSE</span><button data-go="4">下一页：吃在成都 →</button></div>
+    </section>
+
+    <section class="page" id="page-4" data-title="吃成都">
+      <div class="page-heading">
+        <p class="eyebrow">04 / EAT LIKE A LOCAL</p><h1>先别急着找“最好吃”，<br><em>找你吃得舒服的。</em></h1>
+        <p>成都味型丰富，麻、辣、鲜、甜各有主场。店铺口味和营业状态会变，优先看近期评价与当日菜单，不为网红排名跨城排队。</p>
+      </div>
+      <div class="food-feature">
+        <div class="food-feature-image"></div>
+        <div class="food-feature-copy"><p class="eyebrow">HOT POT, TWO MOODS</p><h2>老火锅与市井火锅，<br>不是一个“贵不贵”的区别。</h2><p><b>老火锅：</b>牛油锅底、味道厚、麻辣感强，适合能吃辣、愿意慢涮的人。先点少量菜，尝过锅底再加。</p><p><b>市井火锅：</b>环境和价格通常更日常，菜品份量灵活，适合随性吃一顿。别仅凭“本地人都来”判断，看看最近评价和锅底说明。</p><p class="food-note">第一次吃：鸳鸯锅 + 微辣/菌汤；点餐明确说“少麻少辣”，不能吃辣就别硬扛红锅。</p></div>
+      </div>
+      <div class="food-categories">
+        <article><span class="food-icon">🥢</span><h3>串串香</h3><p>自选签签，结账按签或称重，先问清计价方式和锅底费。适合多人少量多尝。</p></article>
+        <article><span class="food-icon">🍗</span><h3>钵钵鸡</h3><p>红油与藤椒口味都有，冷串更适合夏天。选食材周转快、标价清晰的店。</p></article>
+        <article><span class="food-icon">🍜</span><h3>担担面</h3><p>香、麻、咸甜平衡，部分店偏干拌。不能吃辣先问可否不加红油，别把“微辣”想成完全不辣。</p></article>
+        <article><span class="food-icon">🥟</span><h3>钟水饺 / 龙抄手</h3><p>钟水饺偏甜辣红油；龙抄手是汤食。可以小份组合吃，景区店和老字号的价格、体验差异明显。</p></article>
+        <article><span class="food-icon">🍡</span><h3>糖油果子</h3><p>趁热吃外脆里糯，买少量现做的更好。人气摊位排队不代表每天都开。</p></article>
+        <article><span class="food-icon">🍧</span><h3>冰粉 / 凉糕</h3><p>适合辣后解口，配料与甜度可选；夏天留意卫生和冷藏，不必为了拍照加一大堆配料。</p></article>
+        <article><span class="food-icon">🥞</span><h3>蛋烘糕</h3><p>现做小点心，咸甜馅都能试，热门摊位可能排队。选少量口味分享，不用一次买十个。</p></article>
+        <article><span class="food-icon">🥬</span><h3>不吃辣也有得吃</h3><p>清汤/菌汤锅、白味蒸菜、甜水面（先问辣度）、抄手清汤版、川菜中的蒸蛋/白味菜；点单明确说明“完全不放辣椒和花椒”。</p></article>
+      </div>
+      <div class="food-map">
+        <div><p class="eyebrow">NEIGHBORHOOD FOOD MAP</p><h2>按片区吃，少折腾。</h2><p>早餐找住处附近的面馆、包子铺或豆浆店；午餐在当天景点附近解决；晚上只选一个夜市片区。</p></div>
+        <div class="food-map-list"><p><b>春熙路/太古里：</b>选择最多，适合多人各取所需；看清商场价与街边价。</p><p><b>建设路：</b>小吃密集，适合尝鲜；错开 19–21 点高峰，先看标价与队伍周转。</p><p><b>玉林/芳草街：</b>餐饮和小酒馆多，适合慢慢坐；回程先规划交通。</p><p><b>文殊坊/宽窄：</b>方便串联景点；旅游街区小吃可以尝一两样，别把三餐都放在主巷。</p></div>
+      </div>
+      <div class="warning-banner"><span>⚠️</span><p><b>网红店避雷不是“拉黑某个名字”：</b>门店搬迁、品质和营业状态会变。警惕门口拉客、无明码标价、菜单不让看、临时加收锅底/茶位/纸巾费的店；消费前先问清，发现不合理就换一家。</p></div>
+      <div class="page-bottom"><span>EAT WHAT FEELS RIGHT</span><button data-go="5">下一页：照着走 →</button></div>
+    </section>
+
+    <section class="page" id="page-5" data-title="怎么玩">
+      <div class="page-heading">
+        <p class="eyebrow">05 / THREE ITINERARIES</p><h1>三种假期长度，<br><em>都留一点发呆时间。</em></h1>
+        <p>按住宿在市区、以公共交通为主设计；具体路程依实时地图调整。热门景点预约和周末车票尽量提前。</p>
+      </div>
+      <div class="route-tabs" role="tablist" aria-label="选择旅行天数">
+        <button class="route-tab is-selected" data-route="r2">2天1晚 <small>周末快闪</small></button>
+        <button class="route-tab" data-route="r3">3天2晚 <small>主流经典</small></button>
+        <button class="route-tab" data-route="r4">4天3晚 <small>深度慢游</small></button>
+      </div>
+      <article class="route-panel is-visible" id="r2">
+        <div class="route-summary"><span>01 / QUICK WEEKEND</span><h2>2天1晚 · 城市轻量版</h2><p>适合周五晚到、周日晚走。熊猫基地和都江堰别硬塞进这条线。</p></div>
+        <div class="timeline">
+          <div class="time-row"><time>DAY 1<br>上午</time><div><b>到达 → 放行李 → 人民公园</b><p>落地后先入住或寄存行李；人民公园喝茶、看城市慢生活。午餐在公园周边解决。</p></div></div>
+          <div class="time-row"><time>DAY 1<br>下午</time><div><b>宽窄巷子 → 井巷子</b><p>步行慢逛，走支巷和院落；饿了吃小份小吃，不在主街吃一整桌。</p></div></div>
+          <div class="time-row"><time>DAY 1<br>晚上</time><div><b>春熙路 → 太古里 → 大慈寺外圈</b><p>搭地铁到商圈，拍IFS熊猫和街景；晚餐就近选标价清晰的店，累了直接回酒店。</p></div></div>
+          <div class="time-row"><time>DAY 2<br>上午</time><div><b>武侯祠 → 锦里</b><p>先按官方渠道预约武侯祠，建议开馆后入内；锦里只逛一段，别赶时间追表演。</p></div></div>
+          <div class="time-row"><time>DAY 2<br>下午</time><div><b>午餐 → 取行李 → 返程</b><p>住武侯祠片区可附近用餐；住市中心则地铁返回。至少给机场/车站预留充足通勤和安检时间。</p></div></div>
+        </div>
+        <div class="route-foot"><b>吃饭落脚：</b>第一晚春熙路/酒店附近，第二天武侯祠—高升桥一带。全程市区内，不折返。</div>
+      </article>
+      <article class="route-panel" id="r3">
+        <div class="route-summary"><span>02 / CLASSIC THREE DAYS</span><h2>3天2晚 · 第一次来首选</h2><p>主城三块按东西/中心串起来；行程有余量，不需要每天天没亮出门。</p></div>
+        <div class="timeline">
+          <div class="time-row"><time>DAY 1<br>下午</time><div><b>入住 → 人民公园 → 宽窄巷子</b><p>把第一天留给轻松步行和调整状态。茶馆坐一会儿，晚上宽窄巷子附近吃饭。</p></div></div>
+          <div class="time-row"><time>DAY 1<br>晚上</time><div><b>井巷子 / 泡桐树街周边</b><p>看体力择一片散步，不重复逛同类商业街。</p></div></div>
+          <div class="time-row"><time>DAY 2<br>上午</time><div><b>大熊猫基地</b><p>早出发，预约票和交通提前确认；园内按当日开放区域走 3–4 小时，午餐在回城路上或市区解决。</p></div></div>
+          <div class="time-row"><time>DAY 2<br>下午</time><div><b>回酒店休息 → 春熙路 / 太古里</b><p>不要接着安排远郊景点。傍晚拍3D屏和IFS，晚餐在商圈或回酒店附近。</p></div></div>
+          <div class="time-row"><time>DAY 3<br>上午</time><div><b>武侯祠</b><p>预留约两小时听历史、看展陈，避免只在红墙打卡。</p></div></div>
+          <div class="time-row"><time>DAY 3<br>下午</time><div><b>锦里简逛 → 返程</b><p>午餐选武侯祠周边，按返程时间取行李。航班/车次较晚可加一段文殊院，不晚点则不硬加。</p></div></div>
+        </div>
+        <div class="route-foot"><b>吃饭落脚：</b>第一天宽窄/人民公园周边；第二天春熙路或住处附近；第三天武侯祠—高升桥。</div>
+      </article>
+      <article class="route-panel" id="r4">
+        <div class="route-summary"><span>03 / SLOW FOUR DAYS</span><h2>4天3晚 · 城市 + 山水</h2><p>把都江堰安排成一天；青城山另留一天，真正想爬山才选前山/后山，不赶两头。</p></div>
+        <div class="timeline">
+          <div class="time-row"><time>DAY 1</time><div><b>人民公园 → 宽窄巷子 → 晚餐</b><p>轻松抵达日，茶馆和老城步行。吃完早点休息，为第二天早起做准备。</p></div></div>
+          <div class="time-row"><time>DAY 2</time><div><b>熊猫基地 → 回城休息 → 建设路（可选）</b><p>上午看熊猫；下午回酒店睡个午觉。晚上只在体力允许时去建设路夜市。</p></div></div>
+          <div class="time-row"><time>DAY 3</time><div><b>高铁去都江堰 → 水利工程 → 南桥 → 住都江堰</b><p>按已购车次到离堆公园站，白天逛都江堰景区，傍晚在灌县古城/南桥吃饭；住都江堰市区，避免夜里往返成都。</p></div></div>
+          <div class="time-row"><time>DAY 4</time><div><b>青城前山半日 → 回成都/机场或车站</b><p>早出发前往青城前山，按体力选择短线或索道；必须预订晚间返程，并预留下山、接驳和进站时间。返程较早就不要安排上山，改在都江堰古城轻松散步。</p></div></div>
+        </div>
+        <div class="route-foot"><b>这是一条压缩版：</b>第 4 天只走青城前山短线，且仅适合晚间返程；若想完整体验青城山、加上武侯祠/文殊院并从容休息，建议加到 5 天。青城后山不是前山的“顺路加项”，不要同日硬拼。</div>
+      </article>
+      <div class="page-bottom"><span>GOOD TRIPS LEAVE ROOM</span><button data-go="6">下一页：预算与避坑 →</button></div>
+    </section>
+
+    <section class="page" id="page-6" data-title="预算避坑">
+      <div class="page-heading">
+        <p class="eyebrow">06 / BUDGET & REAL TALK</p><h1>花得明白，<br><em>才玩得放心。</em></h1>
+        <p>预算按每人估算，不含往返成都的大交通；住宿按双人分摊，旺季/节假日会明显上浮。门票与交通价格请以购票当日为准。</p>
+      </div>
+      <div class="budget-cards">
+        <article class="budget-card"><span class="budget-label">学生轻量游</span><div class="budget-price">¥450–800<small> /人·日</small></div><p>多人拼房或青旅、地铁公交、街边简餐；少进收费馆，挑免费街区和公园。</p><div class="budget-breakdown"><span>住 <b>100–220</b></span><span>吃 <b>80–150</b></span><span>行 <b>20–60</b></span><span>玩 <b>0–150</b></span></div></article>
+        <article class="budget-card budget-featured"><span class="budget-label">舒服正常游</span><div class="budget-price">¥800–1,500<small> /人·日</small></div><p>位置方便的中档酒店双人分摊、每日一顿特色餐、含1–2个收费景点。</p><div class="budget-breakdown"><span>住 <b>220–500</b></span><span>吃 <b>150–300</b></span><span>行 <b>40–120</b></span><span>玩 <b>100–300</b></span></div></article>
+        <article class="budget-card"><span class="budget-label">轻奢慢旅行</span><div class="budget-price">¥1,800–3,500+<small> /人·日</small></div><p>精品酒店或独立房间、打车比例高、品质餐厅/演出与灵活活动。</p><div class="budget-breakdown"><span>住 <b>600–1,500+</b></span><span>吃 <b>300–700</b></span><span>行 <b>150–400</b></span><span>玩 <b>200–600+</b></span></div></article>
+      </div>
+      <p class="fineprint budget-note">熊猫基地、武侯祠、都江堰、青城山等门票按实际购票政策另核；三餐和住宿价格受日期、位置、房型影响，表格用于做预算，不是商家报价。</p>
+      <div class="avoid-section">
+        <div class="avoid-title"><p class="eyebrow">SAVE YOUR MONEY & MOOD</p><h2>这些钱，不用花得不明不白。</h2></div>
+        <div class="avoid-grid">
+          <article><span>01</span><h3>熊猫基地“快速通道”</h3><p>官方预约渠道购票；对场外代预约、免排队、内部票保持警惕。遇排队问工作人员，不向陌生人转账买票。</p></article>
+          <article><span>02</span><h3>锦里景区小吃</h3><p>不是不能吃，而是先看价签、份量、是否按串/按份计价。尝一两样就好，不必在游客街区完成全套美食清单。</p></article>
+          <article><span>03</span><h3>路边采耳</h3><p>不被“特价体验”拉走。正规店先看价格、项目、工具消毒与资质；耳部不适或有炎症时不要采耳。</p></article>
+          <article><span>04</span><h3>低价一日游</h3><p>先核验运营主体、行程、是否强制购物、交通与退改规则。远低于合理成本的团，谨慎购买；景区官方交通更稳。</p></article>
+          <article><span>05</span><h3>特产与“本地人带路”</h3><p>不跟陌生人去所谓内部店。买特产认准明码标价和正规门店，先比单价、保质期、邮寄费用。</p></article>
+          <article><span>06</span><h3>最容易买了后悔的体验</h3><p>景区高价旅拍、临时加价讲解、没确认价目的采耳、赶场式包车。喜欢再买，不需要“来都来了”式消费。</p></article>
+        </div>
+      </div>
+      <div class="essentials">
+        <div><span class="big-emoji">🌿</span><p class="eyebrow">ONE LAST THING</p><h2>成都不是靠“打卡数量”认识的。</h2></div>
+        <p>古韵在武侯祠的古柏和文殊院的晨钟里，烟火在茶馆里续上的一壶水、夜市一口刚出锅的蛋烘糕里，新潮藏在东郊厂房的音乐声和太古里的街角。留一段空白给天气，也留一段空白给自己——你会发现，这座城最好的部分，常常不在行程表上。</p>
+      </div>
+      <div class="photo-list"><h3>📷 适合收尾的配图清单</h3><p>熊猫竹林一张 · 鹤鸣茶桌一张 · 巷子树影一张 · IFS城市夜景一张 · 夜市热气一张 · 都江堰水景一张 · 你的旅行鞋和一张留白</p></div>
+      <footer class="sources">
+        <div><p class="eyebrow">CHECK BEFORE YOU GO</p><h3>出发前，最后核一下</h3></div>
+        <div><p>门票、开放时间、预约和交通可能调整；本文不声称“本人实地验证”，仅提供旅行规划参考。建议出发前查看各景区官方公众号/官网、铁路12306、成都地铁及地图实时路线。</p>
+          <p class="source-links"><a href="https://www.wuhouci.net.cn/" target="_blank" rel="noreferrer">成都武侯祠博物馆官网 ↗</a><a href="https://www.panda.org.cn/" target="_blank" rel="noreferrer">成都大熊猫繁育研究基地 ↗</a><a href="https://www.djy.gov.cn/" target="_blank" rel="noreferrer">都江堰市政府 / 文旅信息 ↗</a></p>
+        </div>
+      </footer>
+      <div class="page-bottom"><span>TAKE IT SLOW · CHENGDU</span><button data-go="1">回到第一页 ↑</button></div>
+    </section>
+  </main>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+  <div class="page-controls" aria-label="翻页">
+    <button class="prev-page" aria-label="上一页">←</button><span><b>01</b> / 06</span><button class="next-page" aria-label="下一页">→</button>
+  </div>
+</body>
+</html>
